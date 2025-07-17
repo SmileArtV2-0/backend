@@ -1,0 +1,12 @@
+﻿namespace SmileArtLab.Domain.Interfaces
+{
+    public interface IUsuarioRepository
+    {
+        Task<Usuario> GetByIdAsync(Guid id, Guid? tenantId);
+        Task<IEnumerable<Usuario>> GetAllAsync();
+        Task CreateAsync(Usuario usuario);
+        Task UpdateAsync(Usuario usuario);
+        Task DeleteAsync(Guid id);
+    }
+
+}

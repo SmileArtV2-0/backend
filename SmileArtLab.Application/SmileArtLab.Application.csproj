@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmileArtLab.Domain\SmileArtLab.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="SmileArtLab.Domain.Entities" />
+    <Using Include="SmileArtLab.Domain.Interfaces" />
+    <Using Include="SmileArtLab.Application.Interfaces" />
+  </ItemGroup>
+</Project>
